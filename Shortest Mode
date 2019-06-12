@@ -1,0 +1,14 @@
+import sys
+import math
+n = int(input())
+nstr = str(n)
+switch = True
+result = 0
+for item in nstr:
+    if switch:
+        result += int(item)
+        switch = False
+    else:
+        result -= int(item)
+        switch = True      
+print(result)
